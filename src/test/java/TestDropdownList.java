@@ -12,9 +12,7 @@ public class TestDropdownList {
         $("#dropdown").click();
         $("#dropdown").$(byText("Option 1")).click();
         $("option[selected=selected]").shouldHave(text("Option 1"));
-
-
     }
-
-
+    //This message for dz 9
+    }
 }
