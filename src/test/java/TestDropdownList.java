@@ -2,7 +2,8 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class TestDropdownList {
     @Test
@@ -11,8 +12,7 @@ public class TestDropdownList {
         $("#dropdown").click();
         $("#dropdown").$(byText("Option 1")).click();
         $("option[selected=selected]").shouldHave(text("Option 1"));
-
-        System.out.println("qwqwqw");
     }
     //This message for dz 9
+    }
 }
